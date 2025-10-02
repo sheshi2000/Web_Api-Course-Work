@@ -11,7 +11,7 @@ const feedbackController = {
                 return res.status(400).json({message: "All fields are required."});
             }
 
-            // Create a new feedback entry
+            // Creating a new feedback entry
             const newFeedback = new Feedback({
                 name,
                 email,
