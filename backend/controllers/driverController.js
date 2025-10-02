@@ -28,6 +28,8 @@ const getAllDrivers = async (req, res) => {
 
 
 // Delete a specific driver
+
+
 const deleteDriver = async (req, res) => {
   const { id } = req.params;
 
@@ -47,6 +49,7 @@ const deleteDriver = async (req, res) => {
     res.status(500).json({ message: "Failed to delete driver", error: err.message });
   }
 };
+
 
 // Update bus details
 const updateBus = async (req, res) => {
